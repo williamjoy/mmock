@@ -11,7 +11,9 @@ require (
 	github.com/elazarl/go-bindata-assetfs v1.0.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/icrowley/fake v0.0.0-20180203215853-4178557ae428
+	github.com/jmartin82/mmock v2.8.0+incompatible // indirect
 	github.com/joeljunstrom/go-luhn v0.0.0-20190413165225-1e071b33b576
+	github.com/jteeuwen/go-bindata v3.0.7+incompatible // indirect
 	github.com/kr/pretty v0.2.0 // indirect
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/gommon v0.3.0 // indirect

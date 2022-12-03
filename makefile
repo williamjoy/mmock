@@ -4,7 +4,7 @@ PKG_NAME=mmock
 NS = jordimartin
 VERSION ?= latest
 
-export GO111MODULE=on
+#export GO111MODULE=on
 
 
 build: bindata \
@@ -13,7 +13,8 @@ build: bindata \
 	go build  -v -o ./bin/$(PKG_NAME) cmd/mmock/main.go
 
 bindata:
-	go-bindata -pkg console -o internal/console/bindata.go tmpl/*
+	go install github.com/kevinburke/go-bindata/...@latest
+	go-bindata -pkg console -o internal/console/bindata.go tmpl/
 
 doc:
 	godoc -http=:6060
